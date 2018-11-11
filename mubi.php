@@ -1,1 +1,3 @@
-<?php echo'asd'; ?>
+<?php echo'asd';
+echo 'rehmat';
+?>
