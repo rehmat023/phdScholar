@@ -10,7 +10,7 @@
 	<?php
 		include("loginLayout/login.php"); 
 	?>
-	hey there
+
 
 
 
