@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/observable';
+import { Observable } from 'rxjs';
 
 interface myData {
   success: boolean,
@@ -19,7 +19,7 @@ export class StudentService {
   getSomeData() {
     return this.http.get<myData>('/api/getUser.php')
   }
-  isLoggedIn(): Observable<isLoggedIn>{
-    return this.http.get<isLoggedIn>('/api/isLoggedIn.php')
+  isLoggedIn(): Observable<isLoggedIn> {
+    return this.http.get<isLoggedIn>('/api/isloggedin.php')
   }
 }

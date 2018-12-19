@@ -17,7 +17,7 @@
     ?>
       {
         "success" : false,
-        "message" : "Invalid Credentials"
+        "message" : "Wrong Email or Password Entered"
       }
     <?php
       }

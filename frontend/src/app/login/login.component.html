@@ -4,8 +4,9 @@
 			<div class="card login-card">
 				<div class="card-body">
 					<h2 class="card-title card-header"> Phd Scholar </h2>
-					<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+					<div *ngIf="validationError" class="validationError">Incorrect Email or Password</div>
 
+					<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
 						<div class="form-group">
 
 							<input type="email" name="email" class="form-control rounded bg " id="email" placeholder="Enter email" [(ngModel)]="login.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />

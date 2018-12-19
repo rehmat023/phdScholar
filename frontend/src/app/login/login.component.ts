@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
+  validationError = false
   login: LoginModel = {
     email: null,
     password: null
@@ -27,7 +28,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['student'])
         this.Auth.setLoggedIn(true)
       } else {
-        window.alert(data.message)
+        this.validationError = true;
       }
     })
   }
