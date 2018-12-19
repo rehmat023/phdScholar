@@ -3,9 +3,7 @@ import { StudentService } from '../student.service';
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',
-  styleUrls: ['./student.component.css'],
-  encapsulation: ViewEncapsulation.None
-
+  styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
   message = "Loading...."

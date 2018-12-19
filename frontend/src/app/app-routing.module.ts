@@ -5,7 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { StudentComponent } from './student/student.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
-
+import { SidebarComponent } from './sidebar/sidebar.component';
 const routes: Routes = [
   {
     path: '',
@@ -17,8 +17,8 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: '**',
-    redirectTo: 'student'
+    path: 'sidebar',
+    component: SidebarComponent
   }
 
 ];

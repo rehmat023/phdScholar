@@ -9,17 +9,31 @@ import { StudentComponent } from './student/student.component';
 import { AuthService } from './auth.service'
 import { StudentService } from './student.service'
 import { AuthGuard } from './auth.guard'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    StudentComponent
+    StudentComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [AuthGuard, AuthService, StudentService],
   bootstrap: [AppComponent]

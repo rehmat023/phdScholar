@@ -5,6 +5,7 @@ import { LoginModel } from '../models/login.model';
 import { Title } from '@angular/platform-browser';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
