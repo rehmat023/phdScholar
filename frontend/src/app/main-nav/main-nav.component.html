@@ -1,9 +1,24 @@
 <mat-toolbar color="primary">
-  <span>SuperLab</span>
+
+  <div class="row col-md-12">
+    <div class="col-md-6">
+      <img src='./assets/img/logo_white.png' class="logo_img" alt="superlab">
+    </div>
+    <div class="col-md-offset-4 col-md-2 ml-auto">
+      <span><a routerLink='/student/login'><button mat-button>
+            Login</button></a>
+        <a routerLink='/student/about'><button mat-button>
+            About Us</button></a></span>
+    </div>
+
+  </div>
+
+
+
+
 
   <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
+  <!-- <span class="example-fill-remaining-space"></span> -->
 
-  <span><a routerLink='Login'>Login</a>
-  	<a routerLink='about'>About Us</a></span>
+
 </mat-toolbar>

@@ -1,0 +1,27 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+.sidenav-container {
+  height: 100%;
+
+}
+.logo_img {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.sidenav {
+  width: 300px;
+  padding: 20px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+.mat-nav-list {
+  margin-top: 50px;
+  padding: 0px;
+}
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

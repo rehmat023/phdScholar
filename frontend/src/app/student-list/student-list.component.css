@@ -1,0 +1,8 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.main-card {
+  height: 100%;
+  margin-top: 50px;
+  /* display:flex; */
+  /* flex-direction:column; */
+}

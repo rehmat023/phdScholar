@@ -1,0 +1,43 @@
+<div class="container main-card">
+  <div class="row align-items-center">
+    <mat-card class="col-md-offset-2 col-md-8  mx-auto ">
+      <mat-card-header>
+        <mat-card-title>Add New Student</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+          <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Enter Your Name">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Enter Your Roll No">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Enter Your Roll No (if any)">
+            </mat-form-field>
+            <label>Campus: </label>
+            <mat-radio-group >
+              <mat-radio-button value="pwr">Peshawar</mat-radio-button>
+              <mat-radio-button value="khi">Karachi</mat-radio-button>
+              <mat-radio-button value="lhr">Lahore</mat-radio-button>
+              <mat-radio-button value="isl">Islamabad</mat-radio-button>
+              <mat-radio-button value="fsd">Faisalabad</mat-radio-button>
+            </mat-radio-group>
+            <label>Department: </label>
+            <mat-radio-group >
+              <mat-radio-button value="cs">Computer Science</mat-radio-button>
+              <mat-radio-button value="ee">Electrical Engineering</mat-radio-button>
+              <mat-radio-button value="mngmnt">Management Sciences</mat-radio-button>
+              <mat-radio-button value="maths">Maths</mat-radio-button>
+            </mat-radio-group>
+            
+            <button mat-stroked-button>Submit</button>
+          </div>
+
+
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

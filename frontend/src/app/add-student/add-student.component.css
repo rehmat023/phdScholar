@@ -1,0 +1,28 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+.example-container form {
+  margin-bottom: 20px;
+}
+
+.example-container form > * {
+  margin: 5px 0;
+}
+
+.example-container .mat-radio-button {
+  margin: 0 5px;
+}
+.main-card {
+  height: 100%;
+  margin-top: 50px;
+  padding:5px;
+  color:black !important;
+  /* display:flex; */
+  /* flex-direction:column; */
+}
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}

@@ -12,13 +12,24 @@ import { AuthGuard } from './auth.guard'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatMenuModule, MatFormFieldModule,  MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,MatRadioModule,MatInputModule, MatListModule,  MatGridListModule, MatCardModule } from '@angular/material';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { MainlayoutComponent } from './mainlayout/mainlayout.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { StudentLayoutComponent } from './student-layout/student-layout.component';
 import { ProgressComponent } from './progress/progress.component';
 import { ReportsComponent } from './reports/reports.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { FacultyListComponent } from './faculty-list/faculty-list.component';
+import { ReviewerListComponent } from './reviewer-list/reviewer-list.component';
+import { AdvanceBoardListComponent } from './advance-board-list/advance-board-list.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AddFacultyComponent } from './add-faculty/add-faculty.component';
+import { AddReviewerComponent } from './add-reviewer/add-reviewer.component';
+import { AddAdvancedBoardComponent } from './add-advanced-board/add-advanced-board.component';
+import { UpdateStudentComponent } from './update-student/update-student.component';
+import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
+import { AdminSideaBarComponent } from './admin-sidea-bar/admin-sidea-bar.component';
 
 
 @NgModule({
@@ -32,14 +43,31 @@ import { ReportsComponent } from './reports/reports.component';
     AboutUsComponent,
     StudentLayoutComponent,
     ProgressComponent,
-    ReportsComponent
+    ReportsComponent,
+    StudentListComponent,
+    FacultyListComponent,
+    ReviewerListComponent,
+    AdvanceBoardListComponent,
+    AddStudentComponent,
+    AddFacultyComponent,
+    AddReviewerComponent,
+    AddAdvancedBoardComponent,
+    UpdateStudentComponent,
+    AdminLayoutComponent,
+    AdminSideaBarComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    MatRadioModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatGridListModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    MatMenuModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,

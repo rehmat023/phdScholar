@@ -16,7 +16,8 @@ export class LoginComponent implements OnInit {
   validationError = false
   login: LoginModel = {
     email: null,
-    password: null
+    password: null,
+    role: null
   };
   constructor(private titleService: Title, private Auth: AuthService, private router: Router) { }
 
