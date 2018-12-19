@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,ViewEncapsulation, OnInit } from '@angular/core';
 import { StudentService } from '../student.service';
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',
-  styleUrls: ['./student.component.css']
+  styleUrls: ['./student.component.css'],
+  encapsulation: ViewEncapsulation.None
+
 })
 export class StudentComponent implements OnInit {
   message = "Loading...."
