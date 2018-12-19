@@ -5,7 +5,7 @@
     if($user == 'student'){ ?>
           {
             "success" : true,
-            "message" : "user is logged in"
+            "message" : "welcome"
           }
     <?php
   }else { ?>

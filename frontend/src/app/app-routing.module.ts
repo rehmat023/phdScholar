@@ -15,7 +15,12 @@ const routes: Routes = [
     path: 'student',
     component: StudentComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: '**',
+    redirectTo: 'student'
   }
+
 ];
 
 @NgModule({

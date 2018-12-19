@@ -8,7 +8,7 @@ interface myData {
   providedIn: 'root'
 })
 export class AuthService {
-  loggedInStatus = false
+  private loggedInStatus = false
   setLoggedIn(value: boolean){
     this.loggedInStatus = value
   }
