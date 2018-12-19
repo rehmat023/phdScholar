@@ -1,8 +1,12 @@
 <?php
+  $_POST = json_decode(file_get_contents('php://input'), true);
+  session_start();
   if (isset($_POST) && !empty($_POST)) {
-    $userEmail = $_POST['userEmail'];
-    $userPassword = $_POST['userPassword'];
-    if ($userEmail == 'admin' && $userPassword == 'admin') {
+    $userEmail = $_POST['email'];
+    $userPassword = $_POST['password'];
+    if ($userEmail == 'abc@abc.com' && $userPassword == 'admins') {
+      $_SESSION['user'] = 'student';
+      $_SESSION['userName'] = 'Mubi';
       ?>
       {
         "success" : true,

@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgForm } from '@angular/forms';
 import { LoginModel } from '../models/login.model';
 import { Title } from '@angular/platform-browser';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -14,13 +16,20 @@ export class LoginComponent implements OnInit {
     email: null,
     password: null
   };
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title, private Auth: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.titleService.setTitle('Phd Scholar | Login');
   }
   onSubmit() {
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.login))
+    this.Auth.getUserDetails(this.login.email, this.login.password).subscribe(data => {
+      if(data.success) {
+        this.router.navigate(['student'])
+        this.Auth.setLoggedIn(true)
+      } else {
+        window.alert(data.message)
+      }
+    })
   }
 
 }
