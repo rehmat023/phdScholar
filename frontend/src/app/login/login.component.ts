@@ -24,15 +24,15 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('Phd Scholar | Login');
   }
-  onSubmit() {
-    this.Auth.getUserDetails(this.login.email, this.login.password).subscribe(data => {
-      if(data.success) {
-        this.router.navigate(['student'])
-        this.Auth.setLoggedIn(true)
-      } else {
-        this.validationError = true;
-      }
-    })
-  }
+  // onSubmit() {
+  //   this.Auth.getUserDetails(this.login.email, this.login.password).subscribe(data => {
+  //     if(data.success) {
+  //       this.router.navigate(['student'])
+  //       this.Auth.setLoggedIn(true)
+  //     } else {
+  //       this.validationError = true;
+  //     }
+  //   })
+  // }
 
 }
